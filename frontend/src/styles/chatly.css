@@ -1,0 +1,192 @@
+.chatly-page{
+    position: relative;
+    width: 100hh;
+    height: 100vh;
+
+    background: #E9E9E9;
+    display: flex;
+    /* position: relative; */
+
+}
+
+.chatly-left-panel{
+    width: 347px;
+    height: 100vh;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    /* padding-left: 2rem; */
+    box-sizing: border-box;
+
+}
+
+.chatly-right-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 50vh; */
+    position: relative;
+    width: 100%;
+}
+
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    padding-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    color: #000000;
+}
+.sub-title{
+    margin-left: 150px;
+}
+
+.token-input-box {
+    width: 500px;
+    height: 38px;
+
+    /* Color Fill/White */
+    background: #FFFFFF;
+    margin-bottom: 1rem;
+    border: 1px solid #21978B;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    
+}
+
+.token-input{
+
+    width: 330px;
+    height: 24px;
+    left: 15px;
+    top: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6C757D;
+}
+
+.login-btn{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 126px;
+    height: 38px;
+    left: 475px;
+    top: 509px;
+
+    /* Glare Green */
+    background: #21978B;
+    border-radius: 27px;
+    cursor: pointer;
+}
+.logo{
+    
+    /* position: absolute; */
+    width: 41.47px;
+    height: 37.35px;
+    /* left: 52px;
+    top: 50px; */
+    margin-left: 2rem;
+    background: linear-gradient(146.51deg, #21978B 31.97%, #000905 49.69%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .flex-container{
+        display: flex;
+        align-items: center;
+    }
+
+.heading{
+    margin-left: 2rem;
+}
+.active-users{
+    
+    /* width: 148px; */
+    height: 30px;
+
+    /* padding-left: 2rem; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    /* line-height: 123.6%; */
+
+    /* identical to box height, or 30px */
+    display: flex;
+    flex-direction: column;
+
+    color: #000000;
+    max-width: 100vh;
+}
+.user{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+.user:hover{
+    background: #E5E5E5;
+}
+.my-user{
+    
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    /* align-self: flex-start; */
+    background: #6c7576 ;
+}
+
+.symb{
+    width: 36px;
+    height: 36px;
+    background: #21978B;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    /* Glare Black */
+    color: #141414;
+}
+.user-number{
+    height: 12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+
+    /* Glare Gray */
+    color: #4F5665;
+}
+
+.active{
+    background: #E5E5E5;
+}
+
