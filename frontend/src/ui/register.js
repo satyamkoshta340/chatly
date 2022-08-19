@@ -6,7 +6,7 @@ export default function Register({token, setToken, name, number, setName, setNum
 
   
   const generateToken = async () =>{
-    const responce = await fetch("http://127.0.0.1:8000/api/generateToken/", {
+    const responce = await fetch("https://chatly-wind-server.herokuapp.com/api/generateToken/", {
       method: "POST",
       mode: 'cors',
       headers: {

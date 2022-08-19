@@ -22,7 +22,7 @@ export default function Chatly({name, number}) {
 
   
   const login = async () =>{
-    const responce = await fetch("http://127.0.0.1:8000/api/login/", {
+    const responce = await fetch("https://chatly-wind-server.herokuapp.com/api/login/", {
       method: "POST",
       mode: 'cors',
       headers: {
@@ -94,7 +94,7 @@ export default function Chatly({name, number}) {
                     if(user.userId === rooms[0]){
                       return (
                         <div className='my-user flex-container' key={user.name} onClick={()=>joinRoom(user.userId) } id={user.userId}>
-                          <div className='symb'></div>
+                          <div className='symb my-user-symb'></div>
                           <div className='flex-col-container'>
                             <div className='user-name'>{user.name}</div>
                             <div className='user-number'>{user.number}</div>

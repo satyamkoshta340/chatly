@@ -7,20 +7,21 @@ const dotenv = require('dotenv');
 var cors = require('cors');
 const {Server} = require("socket.io");
 const LiveUserService = require("./service/live_user_service");
-// get config vars
+
 dotenv.config();
 // console.log(require('crypto').randomBytes(64).toString('hex'));
 
 app.use(express.json());
 app.use(cors());
 
-
-const io = new Server(9000, {
+const PORT = process.env.PORT;
+const io = new Server(server, {
     cors: {
         origin: [
             "http://localhost:3000",
             "http://127.0.0.1:3000",
-            "https://admin.socket.io"
+            "https://admin.socket.io",
+            "https://chatly-wind-frontend.herokuapp.com"
             ],
     }});
 
@@ -80,7 +81,7 @@ function authenticateToken(req, res, next) {
 
 
 app.get("/", (req, res) => {
-    res.send("Agriday");
+    res.send("Chatly");
 })
 
 app.post('/api/generateToken', (req, res) => {
@@ -88,7 +89,6 @@ app.post('/api/generateToken', (req, res) => {
     const token = generateAccessToken({ name: req.body.name, number: req.body.number});
     res.json({
         token});
-    // console.log("token generated");
 });
 
 app.post('/api/login', authenticateToken, (req, res) =>{
@@ -98,6 +98,6 @@ app.post('/api/login', authenticateToken, (req, res) =>{
 
 })
 
-server.listen(8000, () => {
-    console.log(`server running on port: 8000`)
+server.listen(PORT, () => {
+    console.log(`server running on port: ${PORT}`);
 })

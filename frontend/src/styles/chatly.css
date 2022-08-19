@@ -144,13 +144,12 @@
     background: #E5E5E5;
 }
 .my-user{
-    
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 2rem;
-    /* align-self: flex-start; */
-    background: #6c7576 ;
+    background: #15585e6b ;
 }
+
 
 .symb{
     width: 36px;
@@ -158,6 +157,10 @@
     background: #21978B;
     margin-right: 1rem;
     border-radius: 50%;
+    
+}
+.my-user-symb{
+    background-image: url("https://picsum.photos/200");
 }
 
 .user-name{
